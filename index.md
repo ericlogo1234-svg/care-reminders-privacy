@@ -16,7 +16,9 @@ GitHub Pages hosts this notice. GitHub says it logs visitors’ IP addresses for
 
 ## How long test information is kept
 
-Care Reminders keeps the current test’s delivery status in memory until the local server restarts. When testing ends, Eric will remove his phone number from the local Care Reminders settings and Meta’s test recipient list.
+Care Reminders saves test-message results, message identifiers, delivery timestamps and error details in a local database on the development computer. These records survive server restarts and remain until deleted. Saved records omit the recipient’s phone number and access credentials.
+
+When testing ends, Eric will delete the saved test-message history and remove his phone number from the local Care Reminders settings and Meta’s test recipient list. Meta and Cloudflare retain information according to their own policies.
 
 ## Privacy requests and complaints
 
